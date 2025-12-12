@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Banner</title>
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+
+    .banner {
+      /* ✅ cole AQUI exatamente o que você mandou (url(data:image...)) */
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...COLE_TUDO_AQUI_SEM_CORTAR...);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      /* altura responsiva */
+      height: 220px;
+    }
+
+    @media (min-width: 768px) {
+      .banner { height: 320px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="banner" aria-label="Banner"></header>
+
+  <main style="padding:16px;">
+    <h1>Conteúdo</h1>
+    <p>Seu app abaixo do banner.</p>
+  </main>
+</body>
+</html>
